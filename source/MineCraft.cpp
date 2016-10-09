@@ -1,14 +1,9 @@
-// First demo. You are not expected to understand it 
-// (don't spend too much time trying and read on).
-// But if you do understand (as a newbie): wow!
-
 #include <tonc.h>
 
 
 int main()
 {
 	REG_DISPCNT = DCNT_MODE4 | DCNT_BG2;
-	//Test
 
 	// Fill screen with gray color
 	unsigned short* paletteMem = (unsigned short*)0x05000000;
