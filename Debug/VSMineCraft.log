@@ -1,0 +1,15 @@
+﻿  make[2]: Nothing to be done for `all'.
+  MineCraft.cpp
+  arm-none-eabi-g++ -MMD -MP -MF /c/devkitPro/Projects/MineCraft/build/MineCraft.d -mcpu=arm7tdmi -mtune=arm7tdmi -mthumb-interwork -mthumb -O2 -Wall -I/c/devkitPro/Projects/MineCraft/source -I/c/devkitPro/Projects/MineCraft/tonclib/include -I/c/devkitPro/Projects/MineCraft/build -ffast-math -fno-strict-aliasing -fno-rtti -fno-exceptions -mthumb-interwork -mthumb -c /c/devkitPro/Projects/MineCraft/source/MineCraft.cpp -o MineCraft.o
+  c:/devkitPro/Projects/MineCraft/source/MineCraft.cpp: In function 'int main()':
+  c:/devkitPro/Projects/MineCraft/source/MineCraft.cpp:15:16: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+    paletteMem[0] = 0x7FE00300;
+                  ^
+  c:/devkitPro/Projects/MineCraft/source/MineCraft.cpp:17:16: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+    paletteMem[2] = 0x00100000;
+                  ^
+  Linking cartridge
+  arm-none-eabi-g++ -specs=gba.specs -mthumb-interwork -mthumb -Wl,-Map,MineCraft.map   MineCraft.o  -L/c/devkitPro/Projects/MineCraft -L/c/devkitPro/Projects/MineCraft/tonclib/lib -ltonc -lgfx -o /c/devkitPro/Projects/MineCraft/MineCraft.elf	
+  arm-none-eabi-nm -Sn /c/devkitPro/Projects/MineCraft/MineCraft.elf > MineCraft.map
+  built ... MineCraft.gba
+  ROM fixed!

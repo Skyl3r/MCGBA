@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F07101E-3ACA-48F9-B4B6-E0CE4B8275C4}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>MineCraft.gba</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>C:\devkitPro\libgba\include;C:\devkitPro\devkitARM\include;C:\devkitPro\Projects\MineCraft\tonclib\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <LibraryPath>C:\devkitPro\Projects\MineCraft\tonclib\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make -r 2&gt;&amp;1 | sed -e ’s/(.[a-zA-Z]+):([0-9]+):/1(2):/‘</NMakeBuildCommandLine>
+    <NMakeOutput>MineCraft.gba</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make -r 2&gt;&amp;1 | sed -e ’s/(.[a-zA-Z]+):([0-9]+):/1(2):/‘</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MineCraft.cpp" />
+    <ClCompile Include="tonclib\base.c" />
+    <ClCompile Include="tonclib\src\pre1.3\tonc_bitmap.c" />
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text.c" />
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_bm.c" />
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_map.c" />
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_oam.c" />
+    <ClCompile Include="tonclib\src\tonc_bg.c" />
+    <ClCompile Include="tonclib\src\tonc_bg_affine.c" />
+    <ClCompile Include="tonclib\src\tonc_bmp16.c" />
+    <ClCompile Include="tonclib\src\tonc_bmp8.c" />
+    <ClCompile Include="tonclib\src\tonc_color.c" />
+    <ClCompile Include="tonclib\src\tonc_core.c" />
+    <ClCompile Include="tonclib\src\tonc_input.c" />
+    <ClCompile Include="tonclib\src\tonc_irq.c" />
+    <ClCompile Include="tonclib\src\tonc_math.c" />
+    <ClCompile Include="tonclib\src\tonc_oam.c" />
+    <ClCompile Include="tonclib\src\tonc_obj_affine.c" />
+    <ClCompile Include="tonclib\src\tonc_sbmp16.c" />
+    <ClCompile Include="tonclib\src\tonc_sbmp8.c" />
+    <ClCompile Include="tonclib\src\tonc_schr4c.c" />
+    <ClCompile Include="tonclib\src\tonc_schr4r.c" />
+    <ClCompile Include="tonclib\src\tonc_surface.c" />
+    <ClCompile Include="tonclib\src\tonc_video.c" />
+    <ClCompile Include="tonclib\src\tte\ase_drawg.c" />
+    <ClCompile Include="tonclib\src\tte\bmp16_drawg.c" />
+    <ClCompile Include="tonclib\src\tte\bmp16_drawg_b1cs.c" />
+    <ClCompile Include="tonclib\src\tte\bmp8_drawg.c" />
+    <ClCompile Include="tonclib\src\tte\bmp8_drawg_b1cs.c" />
+    <ClCompile Include="tonclib\src\tte\chr4c_drawg_b1cts.c" />
+    <ClCompile Include="tonclib\src\tte\chr4c_drawg_b4cts.c" />
+    <ClCompile Include="tonclib\src\tte\chr4r_drawg_b1cts.c" />
+    <ClCompile Include="tonclib\src\tte\obj_drawg.c" />
+    <ClCompile Include="tonclib\src\tte\se_drawg.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_ase.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_bmp.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_chr4c.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_chr4r.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_obj.c" />
+    <ClCompile Include="tonclib\src\tte\tte_init_se.c" />
+    <ClCompile Include="tonclib\src\tte\tte_iohook.c" />
+    <ClCompile Include="tonclib\src\tte\tte_main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="build\all_gfx.h" />
+    <ClInclude Include="build\nums.h" />
+    <ClInclude Include="tonclib\base.h" />
+    <ClInclude Include="tonclib\include\tonc.h" />
+    <ClInclude Include="tonclib\include\tonc_asminc.h" />
+    <ClInclude Include="tonclib\include\tonc_bios.h" />
+    <ClInclude Include="tonclib\include\tonc_core.h" />
+    <ClInclude Include="tonclib\include\tonc_input.h" />
+    <ClInclude Include="tonclib\include\tonc_irq.h" />
+    <ClInclude Include="tonclib\include\tonc_legacy.h" />
+    <ClInclude Include="tonclib\include\tonc_libgba.h" />
+    <ClInclude Include="tonclib\include\tonc_math.h" />
+    <ClInclude Include="tonclib\include\tonc_memdef.h" />
+    <ClInclude Include="tonclib\include\tonc_memmap.h" />
+    <ClInclude Include="tonclib\include\tonc_nocash.h" />
+    <ClInclude Include="tonclib\include\tonc_oam.h" />
+    <ClInclude Include="tonclib\include\tonc_surface.h" />
+    <ClInclude Include="tonclib\include\tonc_text.h" />
+    <ClInclude Include="tonclib\include\tonc_tte.h" />
+    <ClInclude Include="tonclib\include\tonc_types.h" />
+    <ClInclude Include="tonclib\include\tonc_video.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -4,17 +4,22 @@
 
 #include <tonc.h>
 
+
 int main()
 {
-    *(unsigned int*)0x04000000 = 0x0403;
+	REG_DISPCNT = DCNT_MODE4 | DCNT_BG2;
 
-    ((unsigned short*)0x06000000)[120+80*240] = 0x001F;
-    ((unsigned short*)0x06000000)[136+80*240] = 0x03E0;
-    ((unsigned short*)0x06000000)[120+96*240] = 0x7C00;
-	char *cp = new char[100];
-	
-	
-    while(1);
+	// Fill screen with gray color
+	unsigned short* paletteMem = (unsigned short*)0x05000000;
 
-    return 0;
+	paletteMem[0] = 0x7FE00300;
+	paletteMem[1] = 0x00007C18;
+	paletteMem[2] = 0x00100000;
+	paletteMem[3] = 0x00000000;
+
+	m4_line(1, 1, 100, 100, 1);
+	m4_line(1, 1, 100, 100, 2);
+	m4_line(1, 1, 100, 100, 3);
+
+	while (1);
 }

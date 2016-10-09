@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tonclib\base.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_bg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_bg_affine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_bmp16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_bmp8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_irq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_oam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_obj_affine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_sbmp16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_sbmp8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_schr4c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_schr4r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_surface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tonc_video.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\pre1.3\tonc_bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_bm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_map.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\pre1.3\tonc_text_oam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\ase_drawg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\bmp16_drawg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\bmp16_drawg_b1cs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\bmp8_drawg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\bmp8_drawg_b1cs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\chr4c_drawg_b1cts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\chr4c_drawg_b4cts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\chr4r_drawg_b1cts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\obj_drawg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\se_drawg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_ase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_bmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_chr4c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_chr4r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_obj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_init_se.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_iohook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonclib\src\tte\tte_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MineCraft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="build\all_gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="build\nums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_asminc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_bios.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_irq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_legacy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_libgba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_memdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_memmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_nocash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_oam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_tte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonclib\include\tonc_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
