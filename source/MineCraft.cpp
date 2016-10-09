@@ -8,6 +8,7 @@
 int main()
 {
 	REG_DISPCNT = DCNT_MODE4 | DCNT_BG2;
+	//Test
 
 	// Fill screen with gray color
 	unsigned short* paletteMem = (unsigned short*)0x05000000;
