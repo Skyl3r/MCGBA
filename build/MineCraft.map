@@ -1,0 +1,287 @@
+         w __deregister_frame_info
+         w __gnu_Unwind_Find_exidx
+         w __register_frame_info
+         w _ITM_deregisterTMCloneTable
+         w _ITM_registerTMCloneTable
+         w _Jv_RegisterClasses
+00080000 N _stack
+02000000 A __eheap_start
+02000000 A __end__
+02000000 A __ewram_end
+02000000 D __ewram_start
+02000000 A __sbss_end__
+02000000 A __sbss_start__
+02040000 A __eheap_end
+03000000 A __bss_start
+03000000 A __bss_start__
+03000000 A __iwram_end__
+03000000 T __iwram_start
+03000000 A __iwram_start__
+03000000 b completed.6503
+03000004 b object.6508
+0300001c 0000000c b _ZL10eh_globals
+03000028 00000010 b _ZN12_GLOBAL__N_114emergency_poolE
+03000038 00000004 b _ZN12_GLOBAL__N_113__new_handlerE
+0300003c 00000004 B __malloc_max_total_mem
+03000040 00000004 B __malloc_max_sbrked_mem
+03000044 00000004 B __malloc_top_pad
+03000048 00000028 B __malloc_current_mallinfo
+03000070 00000004 b heap_start.5702
+03000074 00000004 B fake_heap_start
+03000078 00000004 B fake_heap_end
+0300007c 00000038 B __syscalls
+030000b4 A __bss_end__
+030000b4 A __data_start__
+030000b4 00000004 D _ZN10__cxxabiv120__unexpected_handlerE
+030000b8 00000004 D _ZN10__cxxabiv119__terminate_handlerE
+030000bc 00000408 D __malloc_av_
+030004c4 00000004 D __malloc_trim_threshold
+030004c8 00000004 D __malloc_sbrk_base
+030004cc 0000000c d __malloc_lock_object
+030004d8 00000440 d impure_data
+03000918 00000004 D _impure_ptr
+0300091c t __frame_dummy_init_array_entry
+0300091c A __init_array_start
+0300091c A __preinit_array_end
+0300091c A __preinit_array_start
+0300091c T __TMC_END__
+03000924 t __do_global_dtors_aux_fini_array_entry
+03000924 A __fini_array_start
+03000924 A __init_array_end
+03000928 A __fini_array_end
+03000928 d __JCR_END__
+03000928 d __JCR_LIST__
+0300092c A __data_end__
+0300092c D __iheap_start
+0300092c D __iwram_overlay_end
+0300092c D __iwram_overlay_start
+03007f00 A __sp_usr
+03007fa0 A __sp_irq
+03007ff8 A __irq_flags
+03008000 A __iwram_top
+08000000 T __text_start
+08000000 T _start
+080000c0 t rom_header_end
+080000c4 T __boot_method
+080000c5 T __slave_number
+080000e0 T start_vector
+08000126 t DoEWRAMClear
+08000130 t SkipEWRAMClear
+08000166 t CIW0Skip
+08000170 t CEW0Skip
+08000186 t ClearMem
+08000190 t ClrLoop
+08000196 t ClearMX
+08000198 t _blx_r3_stub
+0800019a t CopyMemChk
+0800019c t CopyMem
+080001a4 t CIDLoop
+080001ac t CIDExit
+08000210 T _init
+08000220 t deregister_tm_clones
+0800024c t register_tm_clones
+0800027c t __do_global_dtors_aux
+080002ac t frame_dummy
+080002f4 00000016 t selfrel_offset31
+0800030c 00000078 t search_EIT_table
+08000384 00000028 t __gnu_unwind_get_pr_addr
+080003ac 000000a0 t get_eit_entry
+0800044c 0000005a t restore_non_core_regs
+080004a8 0000000e t _Unwind_decode_typeinfo_ptr.isra.0
+080004b8 00000004 t __gnu_unwind_24bit.isra.1
+080004bc 00000002 t _Unwind_DebugHook
+080004c0 0000003e t unwind_phase2
+08000500 000000e8 t unwind_phase2_forced
+080005e8 00000004 T _Unwind_GetCFA
+080005ec 0000005a T __gnu_Unwind_RaiseException
+08000648 00000018 T __gnu_Unwind_ForcedUnwind
+08000660 00000048 T __gnu_Unwind_Resume
+080006a8 0000001e T __gnu_Unwind_Resume_or_Rethrow
+080006c8 00000002 T _Unwind_Complete
+080006cc 00000016 T _Unwind_DeleteException
+080006e4 00000034 T _Unwind_VRS_Get
+08000718 0000001a t _Unwind_GetGR
+08000734 00000034 T _Unwind_VRS_Set
+08000768 0000001a t _Unwind_SetGR
+08000784 0000007c T __gnu_Unwind_Backtrace
+08000800 00000300 t __gnu_unwind_pr_common
+08000b00 0000000e T __aeabi_unwind_cpp_pr0
+08000b10 0000000e W __aeabi_unwind_cpp_pr1
+08000b20 0000000e W __aeabi_unwind_cpp_pr2
+08000b30 00000296 T _Unwind_VRS_Pop
+08000dcc 0000001c T __restore_core_regs
+08000dcc 0000001c T restore_core_regs
+08000de8 T __gnu_Unwind_Restore_VFP
+08000df0 T __gnu_Unwind_Save_VFP
+08000df8 T __gnu_Unwind_Restore_VFP_D
+08000e00 T __gnu_Unwind_Save_VFP_D
+08000e08 T __gnu_Unwind_Restore_VFP_D_16_to_31
+08000e10 T __gnu_Unwind_Save_VFP_D_16_to_31
+08000e18 T __gnu_Unwind_Restore_WMMXD
+08000e5c T __gnu_Unwind_Save_WMMXD
+08000ea0 T __gnu_Unwind_Restore_WMMXC
+08000eb4 T __gnu_Unwind_Save_WMMXC
+08000ec8 0000002a T ___Unwind_RaiseException
+08000ec8 0000002a T _Unwind_RaiseException
+08000ef4 0000002a T ___Unwind_Resume
+08000ef4 0000002a T _Unwind_Resume
+08000f20 0000002a T ___Unwind_Resume_or_Rethrow
+08000f20 0000002a T _Unwind_Resume_or_Rethrow
+08000f4c 0000002a T ___Unwind_ForcedUnwind
+08000f4c 0000002a T _Unwind_ForcedUnwind
+08000f78 0000002a T ___Unwind_Backtrace
+08000f78 0000002a T _Unwind_Backtrace
+08000fa4 00000032 t next_unwind_byte
+08000fd8 0000001a t _Unwind_GetGR.constprop.0
+08000ff4 0000000c t unwind_UCB_from_context
+08001000 00000318 T __gnu_unwind_execute
+08001318 0000002a T __gnu_unwind_frame
+08001344 0000000e T _Unwind_GetRegionStart
+08001354 00000016 T _Unwind_GetLanguageSpecificData
+0800136c 00000006 T _Unwind_GetTextRelBase
+08001374 00000006 T _Unwind_GetDataRelBase
+0800137c 00000224 T strcmp
+080015a0 0000000a T _getpid_r
+080015ac 0000000a T _kill_r
+080015b8 00000054 T _sbrk_r
+0800160c 00000014 T _exit
+08001624 00000018 T __libc_lock_init
+0800163c 00000018 T __libc_lock_acquire
+08001654 00000020 T __libc_lock_try_acquire
+08001674 00000018 T __libc_lock_release
+0800168c 00000018 T __libc_lock_close
+080016a4 00000018 T __libc_lock_init_recursive
+080016bc 00000018 T __libc_lock_acquire_recursive
+080016d4 00000020 T __libc_lock_try_acquire_recursive
+080016f4 00000018 T __libc_lock_release_recursive
+0800170c 00000018 T __libc_lock_close_recursive
+08001728 00000024 T __getreent
+08001750 00000038 T main
+08001788 00000018 T _Znaj
+080017a0 T __cxa_end_cleanup
+080017ac 000000d4 T __cxa_type_match
+08001880 00000062 T __cxa_begin_cleanup
+080018e4 00000072 T __gnu_end_cleanup
+08001958 00000002 T _ZNSt9exceptionD1Ev
+08001958 00000002 T _ZNSt9exceptionD2Ev
+0800195c 00000002 T _ZNSt13bad_exceptionD1Ev
+0800195c 00000002 T _ZNSt13bad_exceptionD2Ev
+08001960 00000008 T _ZNKSt13bad_exception4whatEv
+08001968 00000010 T _ZNSt13bad_exceptionD0Ev
+08001978 0000001c T _ZN10__cxxabiv120__si_class_type_infoD1Ev
+08001978 0000001c T _ZN10__cxxabiv120__si_class_type_infoD2Ev
+08001994 00000020 T _ZN10__cxxabiv120__si_class_type_infoD0Ev
+080019b4 00000098 T _ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+08001a4c 0000003e T _ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
+08001a8c 0000002a T _ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
+08001ab8 0000003e t _ZN10__cxxabiv1L24__is_gxx_exception_classEPc
+08001af8 00000020 T __cxa_call_terminate
+08001b18 000000fe T __cxa_call_unexpected
+08001c18 00000008 T __cxa_get_globals_fast
+08001c20 00000008 T __cxa_get_globals
+08001c28 00000086 T __cxa_begin_catch
+08001cb0 00000092 T __cxa_end_catch
+08001d44 00000002 T _ZNSt9type_infoD1Ev
+08001d44 00000002 T _ZNSt9type_infoD2Ev
+08001d48 00000004 T _ZNKSt9type_info14__is_pointer_pEv
+08001d48 00000004 T _ZNKSt9type_info15__is_function_pEv
+08001d4c 00000030 T _ZNKSt9type_infoeqERKS_
+08001d7c 0000010c t _ZL28read_encoded_value_with_basehjPKhPj
+08001e88 00000048 t _ZL21base_of_encoded_valuehP15_Unwind_Context
+08001ed0 000000a0 t _ZL17parse_lsda_headerP15_Unwind_ContextPKhP16lsda_header_info
+08001f70 000004bc T __gxx_personality_v0
+0800242c 0000000c T _ZdlPv
+08002438 00000046 T _Znwj
+08002480 00000074 t _ZN12_GLOBAL__N_14pool4freeEPv.constprop.4
+080024f4 00000068 t _ZN12_GLOBAL__N_14pool8allocateEj.constprop.5
+0800255c 00000030 T __cxa_allocate_exception
+0800258c 00000028 T __cxa_free_exception
+080025b4 00000030 t _GLOBAL__sub_I___cxa_allocate_exception
+080025e4 0000003e T _ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
+08002624 0000000e T _ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
+08002634 0000001c T _ZN10__cxxabiv117__class_type_infoD1Ev
+08002634 0000001c T _ZN10__cxxabiv117__class_type_infoD2Ev
+08002650 00000020 T _ZN10__cxxabiv117__class_type_infoD0Ev
+08002670 0000001e T _ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
+08002690 00000042 T _ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
+080026d4 0000002e T _ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
+08002704 0000000c T _ZSt15get_new_handlerv
+08002710 0000002a T _ZN10__cxxabiv111__terminateEPFvvE
+0800273c 00000010 T _ZSt9terminatev
+0800274c 0000000c T _ZN10__cxxabiv112__unexpectedEPFvvE
+08002758 00000010 T _ZSt10unexpectedv
+08002768 0000000c T _ZSt13get_terminatev
+08002774 0000000c T _ZSt14get_unexpectedv
+08002780 00000008 T _ZNKSt9bad_alloc4whatEv
+08002788 0000001c T _ZNSt9bad_allocD1Ev
+08002788 0000001c T _ZNSt9bad_allocD2Ev
+080027a4 00000020 T _ZNSt9bad_allocD0Ev
+080027c4 00000030 t _ZL23__gxx_exception_cleanup19_Unwind_Reason_CodeP21_Unwind_Control_Block
+080027f4 0000006c T __cxa_throw
+08002860 00000072 T __cxa_rethrow
+080028d4 0000000e T abort
+080028e4 00000056 T __libc_init_array
+0800293c 00000014 T malloc
+08002950 00000014 T free
+08002964 00000564 T _malloc_r
+08002ec8 00000080 T memcpy
+08002f48 00000094 T memset
+08002fdc 00000014 T __malloc_lock
+08002ff0 00000014 T __malloc_unlock
+08003004 00000062 T _raise_r
+08003068 00000014 T raise
+0800307c 000000a4 T _malloc_trim_r
+08003120 000001c8 T _free_r
+080032e8 00000008 t ____gnu_Unwind_Save_VFP_D_from_thumb
+080032f0 00000008 t ____gnu_Unwind_Restore_WMMXD_from_thumb
+080032f8 00000008 t ___Unwind_Resume_or_Rethrow_from_thumb
+08003300 00000008 t __strcmp_from_thumb
+08003308 00000008 t ____gnu_Unwind_Restore_WMMXC_from_thumb
+08003310 00000008 t ____gnu_Unwind_Restore_VFP_D_16_to_31_from_thumb
+08003318 00000008 t ___Unwind_Resume_from_thumb
+08003320 00000008 t ____gnu_Unwind_Save_WMMXC_from_thumb
+08003328 00000008 t ____gnu_Unwind_Save_WMMXD_from_thumb
+08003330 00000008 t ____gnu_Unwind_Restore_VFP_D_from_thumb
+08003338 00000008 t ____gnu_Unwind_Restore_VFP_from_thumb
+08003340 00000008 t ____gnu_Unwind_Save_VFP_D_16_to_31_from_thumb
+08003348 00000008 t ____gnu_Unwind_Save_VFP_from_thumb
+08003350 00000008 t __restore_core_regs_from_thumb
+08003358 00000008 t ___Unwind_RaiseException_from_thumb
+08003360 T __text_end
+08003360 T _fini
+0800336c 00000020 R _ZTSN10__cxxabiv115__forced_unwindE
+0800338c 00000008 R _ZTIN10__cxxabiv115__forced_unwindE
+08003394 00000008 R _ZTISt9exception
+0800339c 00000024 R _ZTSN10__cxxabiv119__foreign_exceptionE
+080033e4 00000008 R _ZTIN10__cxxabiv119__foreign_exceptionE
+080033ec 00000014 R _ZTVSt13bad_exception
+08003400 0000000d R _ZTSSt9exception
+08003410 00000012 R _ZTSSt13bad_exception
+08003424 0000000c R _ZTISt13bad_exception
+08003430 0000002c R _ZTVN10__cxxabiv120__si_class_type_infoE
+0800345c 0000000c R _ZTIN10__cxxabiv120__si_class_type_infoE
+08003468 00000025 R _ZTSN10__cxxabiv120__si_class_type_infoE
+08003490 00000008 R _ZTISt9type_info
+08003498 0000000d R _ZTSSt9type_info
+080034dc 0000002c R _ZTVN10__cxxabiv117__class_type_infoE
+08003508 0000000c R _ZTIN10__cxxabiv117__class_type_infoE
+08003514 00000022 R _ZTSN10__cxxabiv117__class_type_infoE
+08003538 00000014 R _ZTVSt9bad_alloc
+0800354c 0000000c R _ZTISt9bad_alloc
+08003568 0000000d R _ZTSSt9bad_alloc
+0800364c R __exidx_start
+08003764 r __EH_FRAME_BEGIN__
+08003764 R __exidx_end
+080037a8 r __FRAME_END__
+080037ac R __data_lma
+080037ac R __iwram_lma
+08004014 R __init_lma
+08004014 R __preinit_lma
+0800401c R __fini_lma
+08004020 R __jcr_lma
+08004024 R __ewram_lma
+08004024 R __iwram_overlay_lma
+08004024 A __load_start_iwram0
+08004024 A __load_stop_iwram0
+08004024 R __pad_lma
+0800402c R __rom_end__
