@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\MineCraft.cpp" />
+    <ClCompile Include="source\page_pic.c" />
     <ClCompile Include="tonclib\base.c" />
     <ClCompile Include="tonclib\src\pre1.3\tonc_bitmap.c" />
     <ClCompile Include="tonclib\src\pre1.3\tonc_text.c" />
@@ -126,6 +127,7 @@
   <ItemGroup>
     <ClInclude Include="build\all_gfx.h" />
     <ClInclude Include="build\nums.h" />
+    <ClInclude Include="source\page_pic.h" />
     <ClInclude Include="tonclib\base.h" />
     <ClInclude Include="tonclib\include\tonc.h" />
     <ClInclude Include="tonclib\include\tonc_asminc.h" />

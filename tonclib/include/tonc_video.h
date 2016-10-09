@@ -519,6 +519,12 @@ INLINE void m4_plot(int x, int y, u8 clrid)
 		*dst= (*dst&~0xFF) |  clrid;
 }
 
+//! Add a color at a colorid 
+INLINE void m4_setclrid(COLOR clr, u8 clrid)
+{
+	unsigned short* pal = (unsigned short*)0x05000000;
+	pal[clrid] = clr;
+}
 
 //! Draw a \a clrid colored horizontal line in mode 4.
 INLINE void m4_hline(int x1, int y, int x2, u8 clrid)

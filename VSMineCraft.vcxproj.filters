@@ -141,6 +141,9 @@
     <ClCompile Include="source\MineCraft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\page_pic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="build\all_gfx.h">
@@ -204,6 +207,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="tonclib\include\tonc_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\page_pic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

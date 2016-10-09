@@ -1,21 +1,21 @@
 #include <tonc.h>
 
-
 int main()
 {
 	REG_DISPCNT = DCNT_MODE4 | DCNT_BG2;
 
-	// Fill screen with gray color
-	unsigned short* paletteMem = (unsigned short*)0x05000000;
+	m4_setclrid(CLR_BLACK, 0);
+	m4_setclrid(CLR_BLUE, 1);
 
-	paletteMem[0] = 0x7FE00300;
-	paletteMem[1] = 0x00007C18;
-	paletteMem[2] = 0x00100000;
-	paletteMem[3] = 0x00000000;
+	int x, y;
+	x = 100;
+	y = 10;
 
-	m4_line(1, 1, 100, 100, 1);
-	m4_line(1, 1, 100, 100, 2);
-	m4_line(1, 1, 100, 100, 3);
+	while (1) {
+		vid_vsync();
+		key_poll();
+		m4_plot(x, y, 1);
 
-	while (1);
+
+	}
 }
